@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d10cec9fd6a818b40b7dd53d3c30025f
+guid: e9226a860ca93544daea9e1d8d6daea7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,22 +105,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: damage2_2
+      name: "\u0432\u043E\u0440\u043E\u0433_0"
       rect:
         serializedVersion: 2
-        x: 188
-        y: 0
-        width: 422
-        height: 515
+        x: 197
+        y: 1444
+        width: 681
+        height: 417
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c5db16d95ad458408549035a73cbf03
-      internalID: -332375659
+      spriteID: 392698d34a80ba64386178416de3c2df
+      internalID: 365679986
       vertices: []
       indices: 
       edges: []
@@ -136,17 +136,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      damage2_2: -332375659
-      damage2_3: -328053103
-      damage2_5: 1032777112
-      damage2_7: -620410871
-      damage2_4: -2093715485
-      damage2_6: 888227312
-      damage2_0: 691797890
-      damage2_1: 1863741592
+      "\u0432\u043E\u0440\u043E\u0433_0": 365679986
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

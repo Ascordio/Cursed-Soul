@@ -31,12 +31,12 @@ public class EnemyHunter : MonoBehaviour
         if (player.position.x < transform.position.x)
         {
             rb.velocity = new Vector2(-speed, 0);
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector2(0.3150305f, 0.3150305f);
         }
         else if (player.position.x > transform.position.x)
         {
             rb.velocity = new Vector2(speed, 0);
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector2(-0.3150305f, 0.3150305f);
         }
     }
     public void StopHunting()
