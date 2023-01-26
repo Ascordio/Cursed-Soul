@@ -12,6 +12,7 @@ public class PlayerCombat : MonoBehaviour
 
     public int attackDamage = 1;
 
+    [SerializeField] private AudioSource attackSound;
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -24,6 +25,7 @@ public class PlayerCombat : MonoBehaviour
     {
 
         animator.SetTrigger("Attack");
+        attackSound.Play();
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 

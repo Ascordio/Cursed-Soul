@@ -28,6 +28,10 @@ public class PlayerMove : MonoBehaviour
     public LayerMask whatIsGround;
     private bool jumpAbility = true;
 
+    //Звуки
+    [SerializeField] private AudioSource jumpSound;
+    [SerializeField] private AudioSource squattingSound;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -63,9 +67,14 @@ public class PlayerMove : MonoBehaviour
     }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            squattingSound.Play();
+        }
         if (isGround == true && Input.GetKeyDown(KeyCode.Space) && jumpAbility)
         {
             rb.velocity = Vector2.up * jumpForce;
+            jumpSound.Play();
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
